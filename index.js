@@ -4,6 +4,10 @@ const app = express()
 app.set('port', (process.env.PORT || 5000));
 app.use(require('body-parser').json())
 
+const controllers = require('./controllers')
+
+app.use('/wallet/cam/investments', controllers.investments)
+
 app.use('/', (req, res) => {
   res.json({ hello: 'world' })
 })
