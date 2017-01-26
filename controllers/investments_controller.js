@@ -8,7 +8,7 @@ router.get('/new/subscription', (req, res) => {
 })
 
 router.get('/new/redemption', (req, res) => {
-  res.json({ balance: 25000, amount: 0, type: 'REDEMPTION', isAgreedToProspectus: false })
+  res.json({ balance: 25000, amount: 0, type: 'REDEMPTION', isAgreedToProspectus: false, investmentBalance: 200000 })
 })
 
 router.post('/', (req, res) => {
