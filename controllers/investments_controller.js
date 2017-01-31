@@ -18,7 +18,7 @@ router.post('/', (req, res) => {
 
 router.get('/histories', (req, res) => {
   const json = {
-            "pending": [
+            "PENDING": [
                           {
                                           "id": "ea1ac474-fee5-4162-a630-1900b7130dbd",
                                           "amount": 25000,
@@ -38,7 +38,7 @@ router.get('/histories', (req, res) => {
                                           "updatedAt": "2017-01-23T09:21:34+0700"
                                         }
                       ],
-              "progress": [
+              "PROGRESS": [
                             {
                                             "id": "ea1ac474-fee5-4162-a630-1900b7130dbe",
                                             "amount": 25000,
@@ -58,7 +58,7 @@ router.get('/histories', (req, res) => {
                                             "updatedAt": "2017-01-23T09:21:34+0700"
                                           }
                         ],
-              "success": [
+              "SUCCESS": [
                             {
                                             "id": "ea1ac474-fee5-4162-a630-1900b7130dbg",
                                             "amount": 25000,
@@ -79,7 +79,7 @@ router.get('/histories', (req, res) => {
 
                                           }
                         ],
-              "failed": [
+              "FAILED": [
                             {
                                             "id": "ea1ac474-fee5-4162-a630-1900b7130dbi",
                                             "amount": 25000,
