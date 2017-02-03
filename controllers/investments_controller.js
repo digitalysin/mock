@@ -2,7 +2,9 @@ const express = require('express')
 const router = express.Router()
 const cuid = require('cuid')
 
-
+router.get('/balance', (req, res) => {
+  return res.json({ balance: 123000 })
+})
 router.get('/new/subscription', (req, res) => {
   res.json({ balance: 25000, amount: 0, type: 'SUBSCRIPTION', isAgreedToProspectus: false })
 })
